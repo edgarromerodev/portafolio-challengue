@@ -5,11 +5,15 @@ import Proyectos from './Proyectos'
 import Formacion from './Formacion'
 import Habilidades from './Habilidades'
 import Sobremi from './Sobremi'
+import curriculum from "../assets/CV-EDGAR.pdf"
+import { useTheme } from '../provider/ThemeProvider'
 
 
 const Home = () => {
+  const {theme} = useTheme();
   return (
-    <div className='container'>
+   <body>
+     <div className= {`container ${theme}`}>
       <section className='hero_container'>
         <div className="hero_description">
           <h1 className='hero_title'>Hola, Soy Edgar Romero Cuc Chocoj</h1>
@@ -20,7 +24,7 @@ const Home = () => {
            Me entusiasma continuar explorando este emocionante campo y materializar 
            ideas innovadoras en el mundo digital
           </p>
-          <a href="#" className="cta">Descargar CV</a>
+          <a href={curriculum} download="CV-EDGAR.pdf" className="cta">Descargar CV</a>
         </div>
         <img src={portada} alt=""/>
       </section>
@@ -30,6 +34,7 @@ const Home = () => {
     <Proyectos/>
     <Contacto/>
     </div>
+   </body>
   )
 }
 

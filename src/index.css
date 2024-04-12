@@ -8,6 +8,12 @@ body {
   background-color: #f9f9f9;
   color:#003352;
   background-image: linear-gradient(to bottom right, #e2e2e2, #f8f8f8);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark .container{
+  background-color: #091825; /* Fondo oscuro */
+  color: #e2e2e2; /* Texto claro */
 }
 
 /*Estilo para la nav*/
@@ -27,6 +33,11 @@ body {
   z-index: 1000;
   box-sizing: border-box;
   height: 80px;
+}
+
+.dark .cabecera_container {
+  background-color: #003352;
+  color: #fff;
 }
 
 .logo-item {
@@ -57,7 +68,6 @@ body {
 
 .toggle-icon{
   width: 50px;
-  display: none;
 }
 
 /*Estilo para el menu vertical*/ 
@@ -66,6 +76,15 @@ body {
   position: relative;
 }
 
+.dark .menu_movil {
+  background-color: #1f5e85;
+  border-radius: 50%;
+}
+
+
+.menu_cerrar, .menu_abiert {
+  margin: 0 auto;
+}
 .menu_abierto,
 .menu_cerrar {
   width: 30px; /* Ajusta el ancho de tus iconos de menú */
@@ -74,13 +93,16 @@ body {
 
 .menu_movil1 {
   position: absolute;
-  top: 60px; /* Posiciona el menú móvil debajo de la barra de navegación */
+  top: 50px; /* Posiciona el menú móvil debajo de la barra de navegación */
   background-color: #003352; /* Color de fondo del menú móvil */
   width: 400px;
   padding: 20px;
   transform: translateX(-50%);
 }
 
+.dark .menu_movil1 {
+  background-color: #091825;
+}
 .menu_movil1 li {
   margin-bottom: 10px; /* Espacio entre elementos del menú */
 }
@@ -146,8 +168,12 @@ body {
 .hero_container_sobremi {
   background-color: #f9f9f9;
   padding: 40px 0;  
+  transition: background-color 0.5s, color 0.5s;
 }
 
+.dark .hero_container_sobremi {
+  background-image: linear-gradient(to bottom right, #112739, #0b4264);
+}
 .hero_sobremi{
   padding: 0 40px;
   display: flex;  
@@ -167,6 +193,10 @@ body {
   
 }
 
+.dark .titulo_sobremi {
+  color: #fff;
+}
+
 /* Estilo para los párrafos */
 .parrafo_sobremi {
   color: #333; /* Color del texto */
@@ -176,6 +206,9 @@ body {
   text-align: justify;
 }
 
+.dark .parrafo_sobremi {
+  color: #ccc;
+}
 /* Estilo para la imagen */
 .image_sobremi {
   max-width: 300px; 
@@ -213,6 +246,10 @@ body {
   text-align: center;
 }
 
+.dark .card {
+  background-image: linear-gradient(to bottom right, #091825, #0b4264);
+}
+
 /* Estilo para la imagen dentro del card */
 .imagen-card {
   width: 100%; /* Para que la imagen ocupe todo el ancho del card */
@@ -223,7 +260,7 @@ body {
 }
 
 .imagen-card:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 /* Estilo para el subtítulo dentro del card */
 .subtitle-card {
@@ -234,7 +271,9 @@ body {
   padding: 40px 0; 
   background-color: #e0ecf6;
 }
-
+.dark .hero_container_academia  {
+  background-image: linear-gradient(to bottom right, #091825, #0b4264);
+}
 .hero-formacion {
   padding: 0 40px;
 }
@@ -250,9 +289,15 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  overflow: hidden;
 }
 
+.dark .card-formacion {
+  background-color: #b7cdde;
+  color: #091825;
+}
+.card-formacion img {
+  width: 100%;
+}
 .card-formacion p {
   margin: 0;
   padding: 10px;
@@ -262,8 +307,12 @@ body {
 /* Estilo del proyecto */
 .hero_container_proyectos {
   padding: 40px 0; 
+
 }
 
+.dark .hero_container_proyectos {
+  background-image: linear-gradient(to bottom right, #0b4264 ,#091825);
+}
 .hero_proyectos {
   padding: 0 40px;
 }
@@ -333,7 +382,9 @@ body {
   padding: 40px 0;
   background-color: #fff;
 }
-
+.dark .hero_containeter_contacto {
+  background-color: #091825;
+}
 .hero_contacto{
   padding: 0 40px;
 }
@@ -348,6 +399,9 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
+.dark .card_contacto {
+  background-image: linear-gradient(to bottom right, #0b4264 ,#091825);
+}
 .card_description_contacto {
   flex: 1;  
   background-color: #003352;
@@ -356,6 +410,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dark .card_description_contacto {
+  background-color: #091825;
 }
 
 .card_description_contacto h1 {
@@ -411,6 +469,9 @@ body {
   color: #333;
 }
 
+.dark .texto_contacto-1 {
+  color: #fff;
+}
 
 input[type="text"],
 textarea {
@@ -431,6 +492,9 @@ input[type="email"]
   border-radius: 5px;
   resize: none;  
 }
+.dark input {
+  background-color: #e0ecf6;
+}
 
 textarea {
   max-width: 100%; /* Establece el ancho máximo de la textarea */
@@ -438,6 +502,9 @@ textarea {
   margin: 0 auto;
 }
 
+.dark textarea {
+  background-color: #e0ecf6;
+}
 .formcontato__botao {
   background-color: #4CAF50;
   color: white;
@@ -571,6 +638,10 @@ textarea {
     margin-bottom: 20px; /* Espacio entre los cards */
   }
 
+  .card-formacion {
+    max-width: 100%;
+  }
+
   .card_proyecto {
     flex-direction: column; /* Volver a la dirección del flexbox a fila en pantallas pequeñas */
     align-items: center; /* Alinear elementos al centro en pantallas pequeñas */
@@ -598,6 +669,8 @@ textarea {
     display: none;
   }
 
-
+  .dark .menu_movil {
+    display: flex;
+  }
 }
 

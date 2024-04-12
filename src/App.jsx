@@ -8,9 +8,11 @@ import Formacion from './components/Formacion';
 import Habilidades from './components/Habilidades';
 import Sobremi from './components/Sobremi';
 import Footer from './footer/Footer';
+import ThemeProvider from './provider/ThemeProvider';
 
 function App() {
   return (
+    <ThemeProvider> 
     <Router>
     <Nav/> 
     <Routes>
@@ -23,6 +25,7 @@ function App() {
     </Routes>
     <Footer/>
   </Router>
+  </ThemeProvider> 
   )
 }
 
