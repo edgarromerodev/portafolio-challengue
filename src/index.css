@@ -136,6 +136,7 @@ body {
     align-content: center;
     gap: 1em;
     padding-bottom: 20px;
+    margin-top: 20px;
 }
 
 .hero_title{
@@ -282,6 +283,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .card-formacion {
