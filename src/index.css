@@ -1,0 +1,603 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color:#003352;
+  background-image: linear-gradient(to bottom right, #e2e2e2, #f8f8f8);
+}
+
+/*Estilo para la nav*/
+.cabecera_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 25px;
+  transition: 0.5s;
+  color: #003352;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+  height: 80px;
+}
+
+.logo-item {
+  width: 150px;
+  cursor: pointer;
+}
+
+.menu {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+
+
+.menu li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.toggle-icon{
+  width: 50px;
+  display: none;
+}
+
+/*Estilo para el menu vertical*/ 
+.menu_movil{
+  display: none;
+  position: relative;
+}
+
+.menu_abierto,
+.menu_cerrar {
+  width: 30px; /* Ajusta el ancho de tus iconos de menú */
+  cursor: pointer;
+}
+
+.menu_movil1 {
+  position: absolute;
+  top: 60px; /* Posiciona el menú móvil debajo de la barra de navegación */
+  background-color: #003352; /* Color de fondo del menú móvil */
+  width: 400px;
+  padding: 20px;
+  transform: translateX(-50%);
+}
+
+.menu_movil1 li {
+  margin-bottom: 10px; /* Espacio entre elementos del menú */
+}
+
+.menu_movil1 a {
+  color: #ffffff; /* Color del texto del menú móvil */
+  text-decoration: none;
+}
+
+.toggle-icon {
+  width: 30px; /* Ajusta el ancho de tu ícono de menú de toggle */
+  cursor: pointer;
+}
+
+
+/*Estilo para el container*/ 
+.container {
+  margin-top: 80px;
+}
+
+/*Estilo para el container*/ 
+.hero_container {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hero_description {
+     display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 20px;
+}
+
+.hero_title{
+  font-size: 3rem;
+}
+
+.hero__paragraph {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.hero_container img {
+  max-width: 100%; /* Ajustar el tamaño máximo de la imagen */
+}
+
+.cta {
+  display: inline-block;
+  background-color:#009a41;
+  justify-self: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 32px;
+}
+
+
+/* sobre mi */
+.hero_container_sobremi {
+  background-color: #f9f9f9;
+  padding: 40px 0;  
+}
+
+.hero_sobremi{
+  padding: 0 40px;
+  display: flex;  
+  align-items: center;  
+  flex-wrap: wrap;
+}
+ 
+.text-container {
+  flex: 1;
+}
+
+/* Estilo para el título */
+.titulo_sobremi {
+  color: #003352; /* Color del texto */
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espacio inferior */
+  
+}
+
+/* Estilo para los párrafos */
+.parrafo_sobremi {
+  color: #333; /* Color del texto */
+  font-size: 1.2rem; /* Tamaño del texto */
+  line-height: 1.6; /* Altura de línea */
+  margin-bottom: 20px; /* Espacio inferior */
+  text-align: justify;
+}
+
+/* Estilo para la imagen */
+.image_sobremi {
+  max-width: 300px; 
+  margin-left: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.image_sobremi:hover {
+  transform: scale(1.05); 
+}
+
+/* estilo para las habilidades */
+.hero_container_habilidades {
+  padding: 40px 0;  
+}
+
+.hero-habilidades {
+  padding: 0 40px;
+
+}
+
+.cards-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;/* Centrar los cards horizontalmente */
+}
+
+
+.card {
+  background-color: #ffffff; /* Color de fondo del card */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+}
+
+/* Estilo para la imagen dentro del card */
+.imagen-card {
+  width: 100%; /* Para que la imagen ocupe todo el ancho del card */
+  height: auto; /* Altura automática */
+  border-bottom: 1px solid #eeeeee; /* Línea divisoria debajo de la imagen */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.imagen-card:hover {
+  transform: scale(1.1);
+}
+/* Estilo para el subtítulo dentro del card */
+.subtitle-card {
+  margin: 20px; /* Margen interno */
+}
+
+.hero_container_academia {
+  padding: 40px 0; 
+  background-color: #e0ecf6;
+}
+
+.hero-formacion {
+  padding: 0 40px;
+}
+
+.cards-formacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card-formacion {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-formacion p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+/* Estilo del proyecto */
+.hero_container_proyectos {
+  padding: 40px 0; 
+}
+
+.hero_proyectos {
+  padding: 0 40px;
+}
+
+.cards_proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card_proyecto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen_proyectos {
+  flex: 1 1 60%; /* Ocupa inicialmente el 50% del espacio, pero puede encogerse o crecer según el espacio disponible */
+  max-width: 60%; /* Limita el ancho máximo al 50% para garantizar que no ocupe más de la mitad del contenedor */
+  box-sizing: border-box; /* Incluye el padding en el ancho para evitar desbordamientos */
+}
+
+.imagen_proyectos img {
+  max-width: 100%;
+}
+
+.description_proyecto {
+  flex: 1 1 40%; /* Ocupa inicialmente el 50% del espacio, pero puede encogerse o crecer según el espacio disponible */
+  max-width: 40%; /* Limita el ancho máximo al 50% para garantizar que no ocupe más de la mitad del contenedor */
+  box-sizing: border-box; /* Incluye el padding en el ancho para evitar desbordamientos */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitulo_imagen {
+  margin-top: 0; /* Eliminar el margen superior del subtítulo */
+}
+
+.description_imagen {
+  margin-bottom: 10px; /* Agregar margen inferior a la descripción */
+}
+
+.button_imagen {
+  display: flex; /* Utilizar flexbox para alinear los botones horizontalmente */
+  justify-content: space-between; /* Centrar los botones horizontalmente */
+}
+
+.button_imagen a {
+  margin-right: 10px; /* Agregar margen entre los botones */
+  padding: 10px 20px; /* Añadir padding a los botones */
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado del enlace */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Añadir bordes redondeados */
+  display: flex; /* Utilizar flexbox para alinear los botones horizontalmente */
+  align-items: center;
+}
+
+.button_imagen a:hover {
+  background-color: #45a049; /* Cambiar color de fondo al pasar el ratón */
+}
+
+/* contacto */
+.hero_containeter_contacto {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.hero_contacto{
+  padding: 0 40px;
+}
+
+.card_contacto {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: stretch; /* Centra verticalmente los elementos */
+  background-color: #e0ecf6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.card_description_contacto {
+  flex: 1;  
+  background-color: #003352;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_description_contacto h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.icon_usuario {
+  width: 100px;
+}
+
+ .icon_email, .icon_phone {
+  width: 30px; 
+  margin-right: 10px;  
+}
+
+.descript_contacto {
+  font-size: 1rem;
+}
+
+.description_contacto {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.correo-icon {
+  display: flex;
+  align-items: center;
+}
+
+
+.form_contacto {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form_contacto form {
+  max-width: 300px; /* Ancho máximo del formulario */
+}
+
+.texto_contacto {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.texto_contacto-1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Evita que el usuario pueda redimensionar la textarea */
+}
+
+input[type="email"]
+ {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;  
+}
+
+textarea {
+  max-width: 100%; /* Establece el ancho máximo de la textarea */
+  min-height: 100px; /* Altura mínima de la textarea */
+  margin: 0 auto;
+}
+
+.formcontato__botao {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formcontato__botao:hover {
+  background-color: #45a049;
+}
+
+.success-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.container-footer {
+  background-color: #003352;
+  padding: 40px 0;
+}
+
+.hero-footer {
+  padding: 0 20px; /* Ajusta el padding para pantallas pequeñas */
+  color: #fff;
+  text-align: center;
+}
+
+.redes_sociales {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+}
+
+.redes_sociales a {
+  color: #fff;  
+  text-decoration: none;  
+  margin: 5px; /* Ajusta el margen para pantallas pequeñas */
+}
+
+.redes_sociales a:hover {
+  text-decoration: underline;  
+}
+
+.redes_sociales a img {
+  width: 40px;
+  margin-right: 20px;
+}
+.parrafo-foot {
+  margin-top: 40px;
+}
+
+
+
+
+@media (max-width: 887px) {
+  .hero_title {
+    font-size: 1.9rem;
+  }
+  
+  .cta {
+    padding: 8px 16px;
+  }
+
+  .titulo_sobremi {
+    font-size: 1.9rem; /* Reducir el tamaño del título en tablets */
+  }
+
+  .imagen_proyectos {
+    max-width: 80%;/* Agregar margen a la derecha para separar la imagen de la descripción */
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 100px;
+  }
+  .menu{
+    display: none;
+  }
+
+  .menu_movil{
+    display: block;
+  }
+  
+  .hero_container {
+    flex-direction: column;
+  }
+  .hero_description {
+    padding-bottom: 0; /* Eliminar el espacio inferior en teléfonos */
+  }
+
+  .hero_title {
+    font-size: 1.6rem; /* Reducir aún más el tamaño del título en teléfonos */
+  }
+
+  .hero__paragraph {
+    line-height: 1.2; /* Ajustar aún más la altura de línea para una mejor legibilidad en teléfonos */
+  }
+
+  .cta {
+    padding: 6px 12px; /* Reducir aún más el tamaño del botón en teléfonos */
+  }
+
+  .hero_sobremi {
+    flex-direction: column; /* Cambiar la dirección de los elementos a columnas */
+  }
+
+  .image_sobremi {
+    max-width: 100%;
+    margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+    margin-top: 20px; /* Añadir espacio superior a la imagen */
+  }
+
+  .cards-habilidades {
+    flex-direction: column; /* Cambiar la dirección de flexión a columna */
+    align-items: center; /* Centrar los cards verticalmente */
+  }
+
+  .card {
+    max-width: 100%; /* Ancho máximo del card en dispositivos móviles */
+    margin-bottom: 20px; /* Espacio entre los cards */
+  }
+
+  .card_proyecto {
+    flex-direction: column; /* Volver a la dirección del flexbox a fila en pantallas pequeñas */
+    align-items: center; /* Alinear elementos al centro en pantallas pequeñas */
+  }
+
+  .imagen_proyectos{
+    flex: none; /* Elimina la propiedad flex para que los elementos no se estiren */
+    max-width: 100%; /* Asegura que ambos ocupen el 100% del ancho en pantallas pequeñas */
+  }
+
+  .description_proyecto {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .card_contacto{
+    flex-direction: column;
+  }
+
+  .form_contacto  {
+    margin-right: 20px;
+  }
+
+  .card_description_contacto {
+    display: none;
+  }
+
+
+}
+
