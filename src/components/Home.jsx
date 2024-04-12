@@ -12,7 +12,7 @@ import { useTheme } from '../provider/ThemeProvider'
 const Home = () => {
   const {theme} = useTheme();
   return (
-   <body>
+
      <div className= {`container ${theme}`}>
       <section className='hero_container'>
         <div className="hero_description">
@@ -34,7 +34,7 @@ const Home = () => {
     <Proyectos/>
     <Contacto/>
     </div>
-   </body>
+
   )
 }
 

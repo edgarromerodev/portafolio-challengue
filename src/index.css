@@ -296,7 +296,7 @@ body {
   color: #091825;
 }
 .card-formacion img {
-  width: 100%;
+  max-width: 100%;
 }
 .card-formacion p {
   margin: 0;
@@ -589,7 +589,7 @@ textarea {
 
 @media (max-width: 768px) {
   .container {
-    margin-top: 100px;
+    margin-top: 78px;
   }
   .menu{
     display: none;
@@ -638,9 +638,6 @@ textarea {
     margin-bottom: 20px; /* Espacio entre los cards */
   }
 
-  .card-formacion {
-    max-width: 100%;
-  }
 
   .card_proyecto {
     flex-direction: column; /* Volver a la dirección del flexbox a fila en pantallas pequeñas */
