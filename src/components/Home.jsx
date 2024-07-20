@@ -5,7 +5,7 @@ import Proyectos from './Proyectos'
 import Formacion from './Formacion'
 import Habilidades from './Habilidades'
 import Sobremi from './Sobremi'
-import curriculum from "../assets/CV-EDGAR.pdf"
+import curriculum from "../assets/CV_EDGAR.pdf"
 import { useTheme } from '../provider/ThemeProvider'
 
 
@@ -24,7 +24,7 @@ const Home = () => {
            Me entusiasma continuar explorando este emocionante campo y materializar 
            ideas innovadoras en el mundo digital
           </p>
-          <a href={curriculum} download="CV-EDGAR.pdf" className="cta">Descargar CV</a>
+          <a href={curriculum} download="CV_EDGAR.pdf" className="cta">Descargar CV</a>
         </div>
         <img src={portada} alt=""/>
       </section>

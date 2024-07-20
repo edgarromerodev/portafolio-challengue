@@ -10,15 +10,15 @@ const Sobremi = () => {
       <p className='parrafo_sobremi'>
       Soy guatemalteco, tengo 30 años y durante mi trayectoria profesional,
        he invertido tiempo y esfuerzo en mi formación continua. 
-       En el año 2022, completé cursos de JavaScript en la plataforma 
+       En el año 2023, completé cursos de JavaScript en la plataforma 
        educativa Platzi, donde adquirí conocimientos fundamentales 
        sobre el lenguaje y sus aplicaciones en el desarrollo web. 
        En el año 2023, amplié mis habilidades al recibir clases en Levelup, 
        donde me sumergí en el mundo de ReactJS, Bootstrap, Node.js, MongoDB y Express.js. 
       </p>
       <p className='parrafo_sobremi'>
-         Actualmente, sigo dedicando tiempo a la práctica 
-        y el aprendizaje autodidacta, con el objetivo de convertirme en un profesional 
+         Actualmente 2024, sigo dedicando tiempo a la práctica 
+        y el aprendizaje autodidacta, además formé parte de AluraLatam en donde aprendi html, css reactjs, con el objetivo de convertirme en un profesional 
         altamente competente y versátil en el manejo de la tecnología.
       </p>
     </div>
