@@ -11,7 +11,7 @@ const Formacion = () => {
     <div className="cards-formacion">
       <div className="card-formacion">
         <img src={platzi} className='imagen-card' alt="" />
-        <p>Curso recibidos de Javascript desde 0 en el año 2022</p>
+        <p>Curso recibidos de Javascript desde 0 en el año 2023</p>
       </div>
 
       <div className="card-formacion">
