@@ -8,7 +8,8 @@ const Sobremi = () => {
     <div className="text-container">
       <h1 className='titulo_sobremi'> Sobre Mí</h1>
       <p className='parrafo_sobremi'>
-      Soy guatemalteco, tengo 30 años y durante mi trayectoria profesional,
+      
+        Durante mi trayectoria profesional,
        he invertido tiempo y esfuerzo en mi formación continua. 
        En el año 2023, completé cursos de JavaScript en la plataforma 
        educativa Platzi, donde adquirí conocimientos fundamentales 
